@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash denomination</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+  <div class="whole-container">
+    <h1>Cash Denominator</h1> 
+   
+    <div class="form" id="formControle">
+        <div class="InputOne" id="InputOne">
+            <label for="BillAmount">
+                Bill Amount
+            </label>
+            <input type="number" id="BillAmount"/>
+            <p id="InputOneErrorMessage" class="none red">
+                mandatory
+            </p>
+        </div>
+        <div class="InputTwo" id="InputTwo">
+            <label for="AmountPaid">
+                Amount Paid
+            </label>
+            <input type="number" id="AmountPaid"/>
+            <p id="InputTwoErrorMessage" class="none red">
+                mandatory
+            </p>
+        </div>
+        <div class="InputThree" id="InputThree">
+            <button id="btn" type="submit">
+                Calculate
+            </button>
+        </div>
+        <div>
+        <p id="PayMore" class="PayMore red none">Pay Correct Amount</p>
+        </div>
+        <div class="resultContainer none" id="resultContainer">
+            <p class="BalanceMessage" id="BalanceMessage"></p>
+            <div id="result" class="result">
+                <li>
+                    <p class="box heading">Value (₹)</p>
+                    <p class="box heading">Count</p>
+                </li>
+            </div>
+            <button class="btn" onclick="location.reload()">New calculation</button>
+        </div>
+    </div>
+  </div>
+    <script src="/script/script.js"></script>
+</body>
+</html>
